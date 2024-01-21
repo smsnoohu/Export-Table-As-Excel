@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:#333;
+  }
+
+.wrapper {
+    background-color: #fcfcfc;
+    margin: auto;
+    width: 1400px;
+    padding: 30px;
+    min-height:calc(100vh - 60px)
+}
+
+.dataTable{
+    border-collapse: collapse;
+    border: solid 1px #ccc;
+    margin-bottom: 20px;
+    th {
+        background-color: #220c72;
+        color: #fff;
+        padding: 8px 10px;
+        text-align: left;
+    }
+    td {
+        padding: 8px 10px;
+    }
+}
+
+.form-control {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    color: #333;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 5px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 100%;
+}
+
+.btn {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 12px 6px;
+    text-align: center;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    box-shadow: inset 0 1px 0 #ffffff26,0 1px 1px rgba(0,0,0,.075);
+
+    &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(49,132,253,.5);
+    }
+
+    &.primary {
+        background-color: #0d6efd;
+        color:#fff;
+    }
+
+    &.danger{
+        background-color: #dc3545;
+        color:#fff;
+    }
+
+    + button {
+        margin-left: 10px;
+    }
+
+    &:disabled {
+        opacity: .5;
+    }
+}
